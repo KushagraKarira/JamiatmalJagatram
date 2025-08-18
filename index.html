@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udaipur Fruit Co. - Premier Fruit Wholesaler</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://placehold.co/1600x900/a8e063/4a6b2c?text=Fresh+Fruits+Banner');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-green-700">Udaipur Fruit Co.</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-green-600 transition duration-300">About Us</a>
+                <a href="#fruits" class="text-gray-600 hover:text-green-600 transition duration-300">Our Fruits</a>
+                <a href="#why-us" class="text-gray-600 hover:text-green-600 transition duration-300">Why Choose Us</a>
+                <a href="#contact" class="text-gray-600 hover:text-green-600 transition duration-300">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden flex items-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#about" class="block px-6 py-2 text-sm text-gray-600 hover:bg-green-50">About Us</a>
+            <a href="#fruits" class="block px-6 py-2 text-sm text-gray-600 hover:bg-green-50">Our Fruits</a>
+            <a href="#why-us" class="block px-6 py-2 text-sm text-gray-600 hover:bg-green-50">Why Choose Us</a>
+            <a href="#contact" class="block px-6 py-2 text-sm text-gray-600 hover:bg-green-50">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white">
+        <div class="container mx-auto px-6 py-24 md:py-32 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Your Trusted Partner for Fresh Fruits in Udaipur</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Supplying the finest local, national, and imported fruits with a commitment to quality and reliability.</p>
+            <a href="#contact" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 text-lg">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://placehold.co/600x400/d4f4ce/4a6b2c?text=Our+Market+Stall" alt="Udaipur Fruit Co. Market Stall" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Supplying Freshness Across Rajasthan</h2>
+                    <p class="text-gray-600 mb-4">
+                        Founded in the heart of Udaipur, Udaipur Fruit Co. has grown to become a leading wholesale supplier of fresh fruits. Our journey began with a simple mission: to bridge the gap between dedicated farmers and businesses seeking high-quality produce.
+                    </p>
+                    <p class="text-gray-600">
+                        We are a family-run business that values integrity, strong relationships, and exceptional service. We proudly serve hotels, restaurants, caterers, and retailers across the region with a consistent supply of nature's best.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Fruits Section -->
+    <section id="fruits" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Diverse Range of Fruits</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Local Fruits -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                    <img src="https://placehold.co/600x400/f9d423/8b5e0a?text=Local+Fruits" alt="Local Fruits" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Local Gems</h3>
+                        <p class="text-gray-600">Sourced directly from farms around Udaipur and Rajasthan, featuring seasonal favorites like mangoes, guavas, and pomegranates, bursting with local flavor.</p>
+                    </div>
+                </div>
+                <!-- National Fruits -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                    <img src="https://placehold.co/600x400/ff4e50/a02c2d?text=National+Fruits" alt="National Fruits" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">National Harvest</h3>
+                        <p class="text-gray-600">A curated selection of the best fruits from across India, including crisp apples from Himachal, juicy oranges from Nagpur, and sweet grapes from Maharashtra.</p>
+                    </div>
+                </div>
+                <!-- Imported Fruits -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                    <img src="https://placehold.co/600x400/00c9ff/006a88?text=Imported+Fruits" alt="Imported Fruits" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Imported Exotics</h3>
+                        <p class="text-gray-600">Delight your customers with a variety of premium imported fruits such as kiwis from New Zealand, dragon fruit from Southeast Asia, and berries from the Americas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="py-20 bg-green-700 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Why Partner With Us?</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-white text-green-700 mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Unmatched Quality</h3>
+                    <p>We perform rigorous quality checks to ensure every fruit we deliver is fresh, ripe, and delicious.</p>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-white text-green-700 mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Direct Sourcing</h3>
+                    <p>Our strong network of farmers and suppliers ensures you get the freshest produce at competitive prices.</p>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-white text-green-700 mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10l2 2h8a1 1 0 001-1zM3 11h10"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Reliable Delivery</h3>
+                    <p>We guarantee on-time delivery across Udaipur and surrounding areas, keeping your business running smoothly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Contact Us</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div>
+                    <form id="contactForm" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
+                            <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                            <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500">
+                        </div>
+                         <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-md transition duration-300">Send Message</button>
+                        </div>
+                    </form>
+                    <div id="form-message" class="mt-4 text-center"></div>
+                </div>
+                <!-- Contact Info & Map -->
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Our Location</h3>
+                        <p class="text-gray-600">Fruit Mandi, Udaipur, Rajasthan, 313001</p>
+                        <p class="text-gray-600"><strong>Phone:</strong> +91-9876543210</p>
+                        <p class="text-gray-600"><strong>Email:</strong> contact@udaipurfruitco.com</p>
+                    </div>
+                    <div>
+                        <!-- Replace with your actual Google Maps embed code -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58053.86439166744!2d73.65442407556152!3d24.57652796191764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e56550a14411%3A0xdbd8c28455b868b0!2sUdaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1723545082169!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="rounded-lg shadow-md">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-6 text-center">
+            <p>&copy; 2024 Udaipur Fruit Co. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu on link click
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Handle Contact Form Submission
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('form-message');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // This is a mock submission. In a real website, you would send this data to a server.
+            formMessage.textContent = 'Thank you for your message! We will get back to you shortly.';
+            formMessage.className = 'text-green-600';
+            contactForm.reset();
+
+            setTimeout(() => {
+                formMessage.textContent = '';
+            }, 5000);
+        });
+    </script>
+
+</body>
+</html>
