@@ -1,0 +1,21 @@
+{
+  "name": "Jamiatmal Jagatram",
+  "short_name": "JJ Fruits",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fafafa",
+  "theme_color": "#3d3d3d",
+  "description": "Premier Fruit & Vegetable Wholesaler in Udaipur, Rajasthan.",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
