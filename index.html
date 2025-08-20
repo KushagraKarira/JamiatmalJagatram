@@ -57,13 +57,18 @@
         .header-bar .nav-links { display: none; }
         .header-bar .nav-links a { color: var(--text-secondary-color); text-decoration: none; font-weight: 700; font-size: 0.9rem; margin-left: 24px; transition: color 0.2s ease; }
         .header-bar .nav-links a:hover { color: var(--accent-color); }
-        .theme-toggle, #mobile-menu-button { display: block; background: none; border: none; cursor: pointer; padding: 8px; border-radius: 6px; color: var(--text-secondary-color); }
-        .theme-toggle:hover, #mobile-menu-button:hover { background-color: rgba(128,128,128,0.1); }
+        #mobile-menu-button { display: block; background: none; border: none; cursor: pointer; padding: 8px; border-radius: 6px; color: var(--text-secondary-color); }
+        #mobile-menu-button:hover { background-color: rgba(128,128,128,0.1); }
         #mobile-menu { display: none; background-color: var(--header-bg-color); border-bottom: 1px solid var(--border-color); }
         #mobile-menu a { display: block; padding: 12px 24px; text-decoration: none; color: var(--text-color); font-weight: 700; }
         #mobile-menu a:hover { background-color: rgba(128,128,128,0.1); }
         .header-controls { display: flex; align-items: center; gap: 8px; }
-        .hero-section { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://placehold.co/1600x900/a8e063/4a6b2c?text=Fresh+Produce+Banner'); background-size: cover; background-position: center; color: var(--dark-section-text); padding: 80px 0; text-align: center; }
+        
+        .hero-section { position: relative; color: var(--dark-section-text); padding: 80px 0; text-align: center; display: flex; align-items: center; justify-content: center; min-height: 400px; }
+        .hero-bg-image { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+        .hero-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 2; }
+        .hero-section .container { position: relative; z-index: 3; }
+
         .hero-section h1 { font-size: 2.8rem; font-weight: 700; line-height: 1.2; margin: 0 0 16px; }
         .hero-section p { font-size: 1.2rem; margin: 0 auto 32px; max-width: 48rem; opacity: 0.9; }
         .button { display: inline-block; background-color: var(--accent-color); color: var(--white, #fff); font-weight: 700; padding: 12px 24px; border-radius: 6px; text-decoration: none; border: none; cursor: pointer; transition: background-color 0.2s ease; }
@@ -120,12 +125,6 @@
                     <a href="#why-us">Why Choose Us</a>
                     <a href="#contact">Contact</a>
                 </div>
-                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-                    <!-- Sun icon -->
-                    <svg id="theme-icon-light" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-                    <!-- Moon icon -->
-                    <svg id="theme-icon-dark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-                </button>
                 <button id="mobile-menu-button" aria-label="Open Menu">
                     <svg viewBox="0 0 24 24" fill="currentColor" style="width:24px;height:24px;"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
                 </button>
@@ -142,6 +141,7 @@
 
     <!-- Hero Section -->
     <section class="hero-section">
+        <img src="Pineapple.jpg" alt="A close-up of a ripe pineapple, symbolizing fresh tropical produce." class="hero-bg-image" fetchpriority="high">
         <div class="container">
             <h1>Your Trusted Partner for Fresh Produce in Udaipur</h1>
             <p>Supplying the finest local, national, and imported fruits & vegetables with a commitment to quality and reliability.</p>
@@ -155,8 +155,7 @@
             <h2>A Legacy of Freshness in Udaipur's Mandi</h2>
             <div class="grid grid-md-2">
                 <div>
-                    <!-- Remember to compress your images before uploading -->
-                    <img loading="lazy" src="https://placehold.co/600x400/d4f4ce/4a6b2c?text=Our+Market+Stall" alt="A bustling and clean fruit stall at the Udaipur Sabzi Mandi.">
+                    <img loading="lazy" src="Mosambi.jpg" alt="A bustling and clean fruit stall at the Udaipur Sabzi Mandi.">
                 </div>
                 <div>
                     <p>
@@ -176,24 +175,21 @@
             <h2>Our Diverse Range of Produce</h2>
             <div class="grid grid-md-3">
                 <div class="produce-card">
-                    <!-- Remember to compress your images before uploading -->
-                    <img loading="lazy" src="https://placehold.co/600x400/f9d423/8b5e0a?text=Local+Produce" alt="A vibrant display of fresh, locally sourced produce from Rajasthan.">
+                    <img loading="lazy" src="Strawberry.jpg" alt="A vibrant display of fresh, locally sourced produce from Rajasthan.">
                     <div class="produce-card-content">
                         <h3>Local Gems</h3>
                         <p>Sourced directly from farms around Udaipur and Rajasthan, featuring seasonal favorites like mangoes, guavas, and fresh vegetables bursting with local flavor.</p>
                     </div>
                 </div>
                 <div class="produce-card">
-                    <!-- Remember to compress your images before uploading -->
-                    <img loading="lazy" src="https://placehold.co/600x400/ff4e50/a02c2d?text=National+Harvest" alt="A colorful assortment of fruits sourced from across India, like apples and oranges.">
+                    <img loading="lazy" src="Kesar.jpg" alt="A colorful assortment of fruits sourced from across India, like apples and oranges.">
                     <div class="produce-card-content">
                         <h3>National Harvest</h3>
                         <p>A curated selection of the best produce from across India, including crisp apples from Himachal, juicy oranges from Nagpur, and premium vegetables.</p>
                     </div>
                 </div>
                 <div class="produce-card">
-                    <!-- Remember to compress your images before uploading -->
-                    <img loading="lazy" src="https://placehold.co/600x400/00c9ff/006a88?text=Imported+Fruits" alt="Exotic imported fruits including kiwi, dragon fruit, and berries.">
+                    <img loading="lazy" src="IMPApples.jpg" alt="Exotic imported fruits including kiwi, dragon fruit, and berries.">
                     <div class="produce-card-content">
                         <h3>Imported Exotics</h3>
                         <p>Delight your customers with a variety of premium imported fruits such as kiwis from New Zealand, dragon fruit from Southeast Asia, and berries from the Americas.</p>
@@ -323,44 +319,20 @@
             }, 5000);
         });
         
-        // --- Theme Toggling ---
-        const themeToggle = document.getElementById('theme-toggle');
-        const lightIcon = document.getElementById('theme-icon-light');
-        const darkIcon = document.getElementById('theme-icon-dark');
-        const htmlEl = document.documentElement;
-
-        // Function to set the theme
-        function setTheme(theme) {
-            htmlEl.setAttribute('data-theme', theme);
-            if (theme === 'dark') {
-                lightIcon.style.display = 'none';
-                darkIcon.style.display = 'block';
-            } else {
-                lightIcon.style.display = 'block';
-                darkIcon.style.display = 'none';
-            }
-            localStorage.setItem('theme', theme);
-        }
-
-        // Event listener for the toggle button
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = htmlEl.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            setTheme(newTheme);
-        });
-
-        // Initialize theme on page load
+        // --- Automatic Theme Detection ---
         document.addEventListener('DOMContentLoaded', () => {
-            const savedTheme = localStorage.getItem('theme');
-            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
             
-            if (savedTheme) {
-                setTheme(savedTheme);
-            } else if (prefersDark) {
-                setTheme('dark');
-            } else {
-                setTheme('light');
+            function applyTheme(isDark) {
+                const theme = isDark ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', theme);
             }
+
+            applyTheme(prefersDark.matches);
+
+            prefersDark.addEventListener('change', (e) => {
+                applyTheme(e.matches);
+            });
         });
 
 
