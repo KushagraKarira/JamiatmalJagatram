@@ -1,8 +1,0 @@
-body {
-            font-family: 'Inter', sans-serif;
-        }
-        .hero-bg {
-            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://placehold.co/1600x900/a8e063/4a6b2c?text=Fresh+Fruits+Banner');
-            background-size: cover;
-            background-position: center;
-        }
