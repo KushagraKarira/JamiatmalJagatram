@@ -131,6 +131,48 @@
             margin: 15px 0;
         }
 
+        /* Recipe Grid */
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 400px) {
+            .recipe-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .recipe-mini-card {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.04);
+            transition: transform 0.2s;
+        }
+
+        .recipe-mini-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--ripe-saffron);
+        }
+
+        .recipe-title {
+            color: var(--ripe-saffron);
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 5px;
+        }
+
+        .recipe-text {
+            font-size: 0.85rem;
+            color: #555;
+        }
+
         /* Safety Pledge Section */
         .safety-pledge {
             background-color: #F0F9F1;
@@ -177,7 +219,7 @@
 
 <header>
     <h1>JAMIATMAL JAGATRAM</h1>
-    <p>Hand-Picked • Naturally Ripened • Pure Alphonso</p>
+    <p>Hand-Picked • Premium Quality • Pure Alphonso</p>
 </header>
 
 <div class="main-content">
@@ -209,10 +251,37 @@
         <p class="farmer-note">Check your label for the <strong>Batch Name</strong> to see which farmer's orchard these were sourced from today.</p>
     </div>
 
+    <div class="card">
+        <h2>Celebrate the Alphonso</h2>
+        <p>Quick ways to relish your ripe mangoes:</p>
+        
+        <div class="recipe-grid">
+            <div class="recipe-mini-card">
+                <div class="recipe-title">Classic Aamras</div>
+                <div class="recipe-text">Blend ripe mango pulp with a pinch of cardamom powder. Chill for 30 minutes and serve with fresh puris.</div>
+            </div>
+            
+            <div class="recipe-mini-card">
+                <div class="recipe-title">Mango Parfait</div>
+                <div class="recipe-text">Layer diced Alphonso with thick Greek yogurt and crunchy granola in a glass. Perfect for breakfast!</div>
+            </div>
+            
+            <div class="recipe-mini-card">
+                <div class="recipe-title">Spicy Mango Salsa</div>
+                <div class="recipe-text">Toss chopped mangoes, finely diced red onion, jalapeños, fresh coriander, and a squeeze of lime.</div>
+            </div>
+            
+            <div class="recipe-mini-card">
+                <div class="recipe-title">Alphonso Shake</div>
+                <div class="recipe-text">Blend 1 chopped mango with a glass of chilled milk and ice. Skip the sugar—our Alphonso is naturally sweet enough.</div>
+            </div>
+        </div>
+    </div>
+
     <div class="card safety-pledge">
         <span class="safety-title">Our Safety Promise</span>
-        <p>We strictly <strong>Do Not Use Calcium Carbide</strong> or harmful chemicals. </p>
-        <p>We use only <strong>FSSAI-approved ethylene sachets</strong> from reputed vendors. This mimics the natural ripening process, ensuring your mangoes are safe, healthy, and authentic.</p>
+        <p>We strictly <strong>Do Not Use Calcium Carbide</strong> or harmful chemicals.</p>
+        <p>We use only <strong>FSSAI-approved ethylene sachets</strong> from reputed vendors. This ensures your mangoes are safe, healthy, and authentic.</p>
         <span class="fssai-logo">FSSAI COMPLIANT PROCESS</span>
     </div>
 
