@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamiatmal Jagatram | Premium Alphonso Guide</title>
+    <style>
+        :root {
+            --unripe-green: #4CAF50;
+            --mid-yellow: #FFD700;
+            --ripe-saffron: #FF8C00;
+            --deep-orange: #E65100;
+            --text-main: #2D3436;
+            --bg-cream: #FFFAF0;
+            --white: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-cream);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding-bottom: 40px;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, var(--unripe-green), var(--ripe-saffron));
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+            clip-path: ellipse(150% 100% at 50% 0%);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        /* Main Container */
+        .main-content {
+            max-width: 600px;
+            margin: -50px auto 20px;
+            padding: 0 15px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: var(--deep-orange);
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: "•";
+            margin-right: 10px;
+            color: var(--unripe-green);
+        }
+
+        /* Ripening Scale */
+        .scale-container {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+
+        .scale-bar {
+            height: 24px;
+            width: 100%;
+            background: linear-gradient(to right, var(--unripe-green) 0%, var(--mid-yellow) 50%, var(--ripe-saffron) 100%);
+            border-radius: 12px;
+            margin: 15px 0;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .scale-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: #666;
+            padding: 0 5px;
+        }
+
+        /* Instructions List */
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--unripe-green);
+            font-weight: bold;
+        }
+
+        .highlight-box {
+            background: #FFF9E6;
+            border-left: 4px solid var(--mid-yellow);
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+            margin: 15px 0;
+        }
+
+        /* Safety Pledge Section */
+        .safety-pledge {
+            background-color: #F0F9F1;
+            border: 1px solid #C8E6C9;
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .safety-title {
+            color: #2E7D32;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .fssai-logo {
+            font-weight: 800;
+            color: #1A237E;
+            font-size: 1.1rem;
+            margin-top: 10px;
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .farmer-note {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>JAMIATMAL JAGATRAM</h1>
+    <p>Hand-Picked • Naturally Ripened • Pure Alphonso</p>
+</header>
+
+<div class="main-content">
+    
+    <div class="card">
+        <h2>Ripening Guide</h2>
+        <p>Identify the perfect time to enjoy your mangoes using our color scale:</p>
+        
+        <div class="scale-container">
+            <div class="scale-bar"></div>
+            <div class="scale-labels">
+                <span>UNRIPE (Green)</span>
+                <span>RIPE (Saffron)</span>
+            </div>
+        </div>
+
+        <ul>
+            <li><strong>If Unripe:</strong> Keep them in the box at room temperature. The aroma will tell you when they are ready!</li>
+            <li><strong>If Ripe:</strong> Store in the refrigerator to maintain freshness for 2-3 extra days.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>The Perfect Taste</h2>
+        <p>Follow these steps for the ultimate Alphonso experience:</p>
+        <div class="highlight-box">
+            <strong>The Cooling Ritual:</strong> Soak your mangoes in a bowl of fresh tap water for 20 minutes before cutting. This reduces natural heat and makes the pulp creamier.
+        </div>
+        <p class="farmer-note">Check your label for the <strong>Batch Name</strong> to see which farmer's orchard these were sourced from today.</p>
+    </div>
+
+    <div class="card safety-pledge">
+        <span class="safety-title">Our Safety Promise</span>
+        <p>We strictly <strong>Do Not Use Calcium Carbide</strong> or harmful chemicals. </p>
+        <p>We use only <strong>FSSAI-approved ethylene sachets</strong> from reputed vendors. This mimics the natural ripening process, ensuring your mangoes are safe, healthy, and authentic.</p>
+        <span class="fssai-logo">FSSAI COMPLIANT PROCESS</span>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Jamiatmal Jagatram</p>
+    <p>Quality Sourced from Ratnagiri & Devgad</p>
+</footer>
+
+</body>
+</html>
